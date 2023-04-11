@@ -80,6 +80,7 @@ transition: .5s;
 .home-content{
     max-width: 600px;
     margin-left: -30px;
+    margin-bottom: -50px;
 }
 .home-content h3 {
 font-size: 32px;
@@ -105,12 +106,7 @@ animation-delay: .7s;
     animation: slideright 1s ease forwards;
     animation-delay: 1s;
 }
-.home-content p {
-    font-size: 16px;
-    opacity: 0;
-    animation: slideleft 1s ease forwards;
-    animation-delay: 1s;
-}
+
 
 .animation-container {
     width: 800px;
@@ -166,7 +162,7 @@ animation-delay: .7s;
 .btn {
     display: inline-block;
     padding: 12px 28px;
-    background: #d5d5d5;
+    background: #8bc598;
     border-radius: 50px;
     box-shadow: 0 0 10px #8bc598;
     font-size: 15px;
@@ -278,3 +274,52 @@ animation-delay: .7s;
       transform: translateY(0);
     }
   }
+
+  /*Timer*/
+  .timer{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.timer div:hover {
+    color: #0f5c7c;
+    box-shadow: 0 0 20px #8bc598;
+}
+.timer div:hover:before {
+    content: '';
+    position: absolute;
+    border: #8bc598 solid 6px;
+    border-radius: 20px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+  }
+  .timer div:hover:before, .timer div:focus:before, .timer div:active:before {
+    -webkit-animation-name: hvr-ripple-out;
+    animation-name: hvr-ripple-out;
+  }
+.sub_timer{
+    width: 220px;
+  /*  background: rgba(255, 255, 255, 0.19);*/
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    overflow: hidden;
+}
+.digit{
+    color: #d5d5d5;
+    font-weight: lighter;
+    font-size: 70px;
+    text-align: center;
+    padding: 2.5rem 0;
+}
+.digit_name{
+    color: #0f5c7c;
+    background: #8bc598;
+    text-align: center;
+    padding: 0.6rem 0;
+    font-size: 20px;
+}

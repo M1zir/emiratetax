@@ -12,6 +12,7 @@ body {
         background-repeat: no-repeat;
         background-size: cover;
         color: #d5d5d5;
+        overflow: hidden;
 }
 .header {
     position: fixed;
